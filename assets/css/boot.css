@@ -1,0 +1,293 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --primary-color:#e52a3d;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a
+{
+    text-decoration: none;
+    display: inline-block;
+}
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header
+{
+    background: rgba(0,0,0,0.55);
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header .logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+header .logo a
+{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+header nav ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul li a
+{
+    color: #fff;    
+    padding: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+header nav ul li a:hover
+{
+    color: var(--primary-color);
+}
+.frm{
+    display: inline-block;
+    margin-left: 30px;
+    width: 80%;
+    border: 2px solid white;
+    background-color: #fff;
+    color: #252525;
+    
+    padding: 50px;
+    transition: all 0.5s ease-in-out;
+}
+.frm:hover{
+    transform: scale(1.06);
+
+}
+/* Hero */
+.hero
+{
+    background: url('../img/gym1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.hero::before
+{
+    content: "";
+    position: absolute;
+    font-size: 25px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    z-index: 2;
+}
+.hero-container
+{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    z-index: 5;
+}
+.services
+{
+    padding: 75px 0;
+    text-align: center;
+}
+.services .services-box
+{
+    transition: all 0.5s ease-in-out;
+    padding: 10px;
+}
+.services .services-box .thumb
+{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.services .services-box:hover
+{
+    transform: scale(1.05);
+}
+.testimonial
+{
+    background: url('../img/testimonial-bg.jpg');
+    padding: 100px 0;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.bg-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #252525;
+    opacity: 0.55;
+}
+.testimonial-box
+{
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+.testimonial-box .testimonial-thumb
+{
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+}
+.testimonial-box .testimonial-thumb img
+{
+    width: 100px;
+}
+.testimonial-box ul li
+{
+    display: inline-block;
+    color: yellow;
+}
+.owl-dots .owl-dot
+{
+    background-color: #c3c0c0!important;
+
+    width: 20px;
+    height: 10px;
+    border-radius: 20%;
+}
+.owl-dots .owl-dot.active
+{
+    background-color: #3B5998 !important;
+} 
+.owl-dots
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.owl-dot{
+    margin: 2px;
+}
+
+.benefits{
+    margin-top: 50px;
+    background-color: rgb(250, 240, 240);
+}
+.benefits-text{
+    position: relative;
+    top: 20%;
+    left: 0;
+}
+img.img-fluid {
+    /* padding: 40px; */
+    border-radius: 15%;
+    padding: 0;
+    margin: 0;
+}
+.benefits-img{
+    border-radius: 30%;
+    display: inline-block;
+}
+.tri-sec{
+    padding: 50px 0;
+    text-align: center;
+    
+    
+}
+.tri-sec-text{
+    padding: 50px;
+    text-align: center;
+    border:2px solid #e52a3d;
+    transition: all 0.5s ease-in-out;
+}
+.tri-sec-text:hover{
+    transform: scale(1.05);
+}
+.contact-text{
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+
+}
+.social a {
+    padding: 5px;
+    font-size: 20px; 
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.social a:hover{
+    transform: scale(1.06)
+}
+.fa-facebook-f {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-pinterest {
+    background: red;
+    color: white;
+}
+.fa-linkedin{
+    background: #55ACEE;
+    color: white;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.foot{
+    margin-top: 5%;
+}
+.useful-link a{
+    transition: all 0.5s ease-in-out;
+
+}
+.useful-link a:hover{
+    color: #e52a3d;
+    transform: scale(1.06)
+
+}
+.work{
+    text-align: center;
+    margin: 40px;
+}
+.work-text{
+    padding-top: 10%;
+    text-align: center;
+    height: 100%;
+    background-color: #fff;
+    border: 2px solid rgb(212, 203, 203);
+}
+.work-text span svg{
+    height: 40px;
+
+}
